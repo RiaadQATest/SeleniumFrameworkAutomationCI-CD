@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite  parallel="tests" name="Suite">
+
+<listeners>
+<listener class-name="riaadSeleniumFrameWork.TestComponents.Listeners"/>
+</listeners>
+
+  <test thread-count="1" name="Stand Alone Test">
+    <classes>
+      <class name="riaadSeleniumFrameWork.Tests.StandAloneTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="1" name="Error Validations Test">
+    <classes>
+      <class name="riaadSeleniumFrameWork.Tests.ErrorValidationsTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

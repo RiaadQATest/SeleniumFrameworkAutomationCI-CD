@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="3" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-21T01:03:14 SAST" name="Surefire suite" finished-at="2026-05-21T01:04:33 SAST" duration-ms="79164">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce]" name="LoginErrorValidation" class="riaadSeleniumFrameWork.Tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="StandAloneTest.standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]" name="standAloneTest" class="riaadSeleniumFrameWork.Tests.StandAloneTest"/>
+      </group> <!-- Purchase -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@188715b5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-05-21T01:03:14 SAST" name="Surefire test" finished-at="2026-05-21T01:04:33 SAST" duration-ms="79164">
+      <class name="riaadSeleniumFrameWork.Tests.StandAloneTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]" started-at="2026-05-21T01:03:42 SAST" name="launchApplication" finished-at="2026-05-21T01:03:49 SAST" duration-ms="7548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]" started-at="2026-05-21T01:03:49 SAST" name="standAloneTest" data-provider="getData" finished-at="2026-05-21T01:04:10 SAST" duration-ms="20939" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iking@000, email=anska@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div.offset-sm-1 (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64366}, goog:processID: 37024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64366/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36b1744c2a37909fe2534d912c1614d1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.offset-sm-1 (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64366}, goog:processID: 37024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64366/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36b1744c2a37909fe2534d912c1614d1
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at riaadSeleniumFrameWork.AbstractComponent.AbstractComponent.waitForElementToAppear(AbstractComponent.java:34)
+at riaadSeleniumFrameWork.pageObject.ProductCatalogue.getProductList(ProductCatalogue.java:45)
+at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- standAloneTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]" started-at="2026-05-21T01:04:10 SAST" name="tearDown" finished-at="2026-05-21T01:04:10 SAST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]" started-at="2026-05-21T01:04:10 SAST" name="launchApplication" finished-at="2026-05-21T01:04:17 SAST" duration-ms="6347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]" started-at="2026-05-21T01:04:17 SAST" name="standAloneTest" data-provider="getData" finished-at="2026-05-21T01:04:33 SAST" duration-ms="16068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- standAloneTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]" started-at="2026-05-21T01:04:33 SAST" name="tearDown" finished-at="2026-05-21T01:04:33 SAST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]" started-at="2026-05-21T01:04:33 SAST" name="OrderHistoryTest" finished-at="2026-05-21T01:04:33 SAST" depends-on-methods="riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b depends on not successfully finished methods 
+[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b depends on not successfully finished methods 
+[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+      </class> <!-- riaadSeleniumFrameWork.Tests.StandAloneTest -->
+      <class name="riaadSeleniumFrameWork.Tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce]" started-at="2026-05-21T01:03:22 SAST" name="launchApplication" finished-at="2026-05-21T01:03:28 SAST" duration-ms="6319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce]" started-at="2026-05-21T01:03:28 SAST" name="LoginErrorValidation" finished-at="2026-05-21T01:03:30 SAST" duration-ms="1291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce]" started-at="2026-05-21T01:03:30 SAST" name="tearDown" finished-at="2026-05-21T01:03:30 SAST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce]" started-at="2026-05-21T01:03:30 SAST" name="launchApplication" finished-at="2026-05-21T01:03:37 SAST" duration-ms="7237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce]" started-at="2026-05-21T01:03:37 SAST" name="ProductErrorValidation" finished-at="2026-05-21T01:03:41 SAST" duration-ms="4049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce]" started-at="2026-05-21T01:03:41 SAST" name="tearDown" finished-at="2026-05-21T01:03:41 SAST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- riaadSeleniumFrameWork.Tests.ErrorValidationsTest -->
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@188715b5]" started-at="2026-05-21T01:03:14 SAST" name="setUpClass" finished-at="2026-05-21T01:03:15 SAST" duration-ms="518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@c1e14f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@188715b5]" started-at="2026-05-21T01:03:15 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T01:03:22 SAST" duration-ms="7335" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from the Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I add product ZARA COAT 3 to Cart' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("I add product ZARA COAT {int} to Cart")
+public void i_add_product_zara_coat_to_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Checkout ZARA COAT {int} and submit the order")
+public void checkout_zara_coat_and_submit_the_order(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I add product ZARA COAT 3 to Cart' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("I add product ZARA COAT {int} to Cart")
+public void i_add_product_zara_coat_to_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Checkout ZARA COAT {int} and submit the order")
+public void checkout_zara_coat_and_submit_the_order(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.I add product ZARA COAT 3 to Cart(file:///C:/Users/riaad/eclipse-workspace/SeleniumFrameWork/src/test/java/cucumber/SubmitOrder.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@188715b5]" started-at="2026-05-21T01:03:22 SAST" name="tearDownClass" finished-at="2026-05-21T01:03:22 SAST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

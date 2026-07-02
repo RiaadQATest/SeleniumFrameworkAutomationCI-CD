@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-21T00:21:43 SAST" name="Default suite" finished-at="2026-05-21T00:21:53 SAST" duration-ms="9869">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@752325ad]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-05-21T00:21:43 SAST" name="Default test" finished-at="2026-05-21T00:21:53 SAST" duration-ms="9869">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@752325ad]" started-at="2026-05-21T00:21:43 SAST" name="setUpClass" finished-at="2026-05-21T00:21:43 SAST" duration-ms="680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7efb53af]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@752325ad]" started-at="2026-05-21T00:21:43 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T00:21:53 SAST" duration-ms="9080" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from the Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I add product ZARA COAT 3 to Cart' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("I add product ZARA COAT {int} to Cart")
+public void i_add_product_zara_coat_to_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Checkout ZARA COAT {int} and submit the order")
+public void checkout_zara_coat_and_submit_the_order(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I add product ZARA COAT 3 to Cart' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("I add product ZARA COAT {int} to Cart")
+public void i_add_product_zara_coat_to_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Checkout ZARA COAT {int} and submit the order")
+public void checkout_zara_coat_and_submit_the_order(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.I add product ZARA COAT 3 to Cart(file:///C:/Users/riaad/eclipse-workspace/SeleniumFrameWork/src/test/java/cucumber/SubmitOrder.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@752325ad]" started-at="2026-05-21T00:21:53 SAST" name="tearDownClass" finished-at="2026-05-21T00:21:53 SAST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
