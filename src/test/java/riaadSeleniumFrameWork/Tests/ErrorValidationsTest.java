@@ -34,7 +34,7 @@ public class ErrorValidationsTest extends BaseTest{
 		// TODO Auto-generated method stub
 
 //	String productName="ZARA COAT 3";
-	
+	//Changes made to code, user have to update it
 	
 	landingPage.loginApplication("riaad001@gmail.com", "Ro#49015");
 	Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());

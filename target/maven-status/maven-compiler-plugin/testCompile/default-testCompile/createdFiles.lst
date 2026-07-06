@@ -1,4 +1,10 @@
+riaadSeleniumFrameWork\TestComponents\BaseTest.class
+riaadSeleniumFrameWork\Tests\ErrorValidationsTest.class
 riaadSeleniumFrameWork\data\DataReader.class
+riaadSeleniumFrameWork\Tests\StandAloneTest.class
 riaadSeleniumFrameWork\data\DataReader$1.class
+riaadSeleniumFrameWork\TestComponents\Listeners.class
 riaadSeleniumFrameWork\TestComponents\BaseTest$1.class
 riaadSeleniumFrameWork\TestComponents\Retry.class
+cucumber\TestNGTestRunner.class
+riaadSeleniumFrameWork\stepDefinitions\StepDefinitionImpl.class
