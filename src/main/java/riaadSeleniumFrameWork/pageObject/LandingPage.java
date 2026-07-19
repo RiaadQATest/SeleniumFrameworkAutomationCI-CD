@@ -68,8 +68,25 @@ public class LandingPage extends AbstractComponent {
 	
 	public  String getErrorMessage ()
 	{
-		waitForWebElementToAppear(errorMessage);
-		return errorMessage.getText();
+		// Try a few common toast/container locators to be robust against UI changes
+		By[] locators = new By[] { By.cssSelector(".toast-message"), By.cssSelector("#toast-container"), By.cssSelector("#toast-container .toast-message") };
+		for (By loc : locators) {
+			try {
+				waitForElementToAppear(loc);
+				WebElement ele = driver.findElement(loc);
+				String txt = ele.getText();
+				if (txt != null && !txt.isEmpty()) return txt;
+			} catch (Exception ignored) {
+				// try next locator
+			}
+		}
+		// fallback: try the field previously wired via PageFactory
+		try {
+			waitForWebElementToAppear(errorMessage);
+			return errorMessage.getText();
+		} catch (Exception e) {
+			throw new RuntimeException("Error message not found on page", e);
+		}
 	}
 	
 	public void goTo ()

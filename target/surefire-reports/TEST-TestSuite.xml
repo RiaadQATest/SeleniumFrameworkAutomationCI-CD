@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="24.519" tests="7" errors="0" skipped="2" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="248.983" tests="7" errors="0" skipped="2" failures="3">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\riaad\.cache\selenium\chromedriver\win64\150.0.7871.124\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ZA"/>
     <property name="sun.boot.library.path" value="C:\Users\riaad\Downloads\eclipse-java-2025-09-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\riaad\AppData\Local\Temp\surefire15774246387996879135\surefirebooter-20260719153045724_3.jar C:\Users\riaad\AppData\Local\Temp\surefire15774246387996879135 2026-07-19T15-30-45_577-jvmRun1 surefire-20260719153045724_1tmp surefire_0-20260719153045724_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\riaad\AppData\Local\Temp\surefire6818683468971932674\surefirebooter-20260719155802009_3.jar C:\Users\riaad\AppData\Local\Temp\surefire6818683468971932674 2026-07-19T15-58-01_878-jvmRun1 surefire-20260719155802009_1tmp surefire_0-20260719155802009_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\target\test-classes;C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\target\classes;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-java\4.37.0\selenium-java-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-api\4.37.0\selenium-api-4.37.0.jar;C:\Users\riaad\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.37.0\selenium-chrome-driver-4.37.0.jar;C:\Users\riaad\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.37.0\selenium-chromium-driver-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-json\4.37.0\selenium-json-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.37.0\selenium-manager-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.37.0\selenium-devtools-v139-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.37.0\selenium-devtools-v140-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.37.0\selenium-devtools-v141-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.37.0\selenium-edge-driver-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.37.0\selenium-firefox-driver-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-http\4.37.0\selenium-http-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.37.0\selenium-ie-driver-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.37.0\selenium-remote-driver-4.37.0.jar;C:\Users\riaad\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\riaad\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\riaad\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\riaad\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\riaad\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-api\1.55.0\opentelemetry-api-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-context\1.55.0\opentelemetry-context-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-common\1.55.0\opentelemetry-common-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.55.0\opentelemetry-exporter-logging-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.55.0\opentelemetry-sdk-common-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.55.0\opentelemetry-sdk-extension-autoconfigure-spi-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.55.0\opentelemetry-sdk-extension-autoconfigure-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.55.0\opentelemetry-sdk-trace-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.55.0\opentelemetry-sdk-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.55.0\opentelemetry-sdk-metrics-1.55.0.jar;C:\Users\riaad\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.55.0\opentelemetry-sdk-logs-1.55.0.jar;C:\Users\riaad\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-os\4.37.0\selenium-os-4.37.0.jar;C:\Users\riaad\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.37.0\selenium-safari-driver-4.37.0.jar;C:\Users\riaad\.m2\repository\org\seleniumhq\selenium\selenium-support\4.37.0\selenium-support-4.37.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\cucumber-java\7.34.3\cucumber-java-7.34.3.jar;C:\Users\riaad\.m2\repository\io\cucumber\cucumber-core\7.34.3\cucumber-core-7.34.3.jar;C:\Users\riaad\.m2\repository\io\cucumber\cucumber-gherkin\7.34.3\cucumber-gherkin-7.34.3.jar;C:\Users\riaad\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.3\cucumber-gherkin-messages-7.34.3.jar;C:\Users\riaad\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\messages-ndjson\0.3.2\messages-ndjson-0.3.2.jar;C:\Users\riaad\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\riaad\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\riaad\.m2\repository\io\cucumber\datatable\7.34.3\datatable-7.34.3.jar;C:\Users\riaad\.m2\repository\io\cucumber\cucumber-plugin\7.34.3\cucumber-plugin-7.34.3.jar;C:\Users\riaad\.m2\repository\io\cucumber\docstring\7.34.3\docstring-7.34.3.jar;C:\Users\riaad\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\riaad\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\riaad\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\riaad\.m2\repository\io\cucumber\cucumber-testng\7.34.3\cucumber-testng-7.34.3.jar;C:\Users\riaad\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\riaad\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\riaad\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\riaad\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\riaad\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\riaad\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\riaad\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\riaad\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\riaad\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\riaad\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\riaad\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\riaad\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\riaad\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\riaad\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\riaad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\riaad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\riaad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\riaad\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\riaad\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\riaad\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\riaad\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\riaad\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\riaad\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\riaad\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\riaad\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\riaad\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\riaad\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\riaad\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\riaad\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\riaad\AppData\Local\Temp\surefire15774246387996879135\surefirebooter-20260719153045724_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\riaad\AppData\Local\Temp\surefire6818683468971932674\surefirebooter-20260719155802009_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+7-LTS"/>
@@ -62,14 +62,29 @@
     <property name="java.class.version" value="65.0"/>
   </properties>
   <testcase name="LoginErrorValidation" classname="riaadSeleniumFrameWork.Tests.ErrorValidationsTest" time="0.0">
-    <skipped message="Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null"/>
+    <skipped message="Expected condition failed: waiting for at least one condition to be valid: visibility of element located by By.cssSelector: div.mb-3 || condition to not be valid: url to contain &quot;login&quot;. Current url: &quot;https://rahulshettyacademy.com/client/#/auth/login&quot; (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59864}, goog:processID: 14552, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59864/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 16e4262491bc2ac3b00d369c597664de"/>
+    <system-out><![CDATA[Login failed but no error message found
+]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jul 19, 2026 3:58:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 19, 2026 3:58:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.127. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.37.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="LoginErrorValidation" classname="riaadSeleniumFrameWork.Tests.ErrorValidationsTest" time="0.002">
-    <failure message="Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null
+  <testcase name="LoginErrorValidation" classname="riaadSeleniumFrameWork.Tests.ErrorValidationsTest" time="72.572">
+    <failure message="Expected condition failed: waiting for at least one condition to be valid: visibility of element located by By.cssSelector: div.mb-3 || condition to not be valid: url to contain &quot;login&quot;. Current url: &quot;https://rahulshettyacademy.com/client/#/auth/login&quot; (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49315}, goog:processID: 30612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 53608bd0a6e4645531b83bc456435c80" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for at least one condition to be valid: visibility of element located by By.cssSelector: div.mb-3 || condition to not be valid: url to contain "login". Current url: "https://rahulshettyacademy.com/client/#/auth/login" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49315}, goog:processID: 30612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53608bd0a6e4645531b83bc456435c80
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(LandingPage.java:50)
 	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -103,10 +118,21 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
+    <system-out><![CDATA[Login failed but no error message found
+]]></system-out>
+    <system-err><![CDATA[Jul 19, 2026 3:59:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 19, 2026 3:59:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.127. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.37.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
-  <testcase name="ProductErrorValidation" classname="riaadSeleniumFrameWork.Tests.ErrorValidationsTest" time="0.002">
-    <failure message="Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null
-	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:50)
+  <testcase name="ProductErrorValidation" classname="riaadSeleniumFrameWork.Tests.ErrorValidationsTest" time="15.218">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:57)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -139,10 +165,41 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
+    <system-err><![CDATA[Jul 19, 2026 4:00:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 19, 2026 4:00:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.127. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.37.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
-  <testcase name="standAloneTest[{password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}](1)" classname="riaadSeleniumFrameWork.Tests.StandAloneTest" time="0.001">
-    <failure message="Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage" is null
-	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
+  <testcase name="standAloneTest[{password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}](1)" classname="riaadSeleniumFrameWork.Tests.StandAloneTest" time="2.679">
+    <failure message="element click intercepted: Element &lt;button _ngcontent-pnr-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1285, 133). Other element would receive the click: &lt;div _ngcontent-pnr-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=150.0.7871.127)&#10;Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3cf35b0d9dfa12fb2c1c1d10001c2b1d, clickElement {id=f.A84CE466847137AA5083F1B002173D93.d.8298F6BA1C8D7B9568F60D937DBD06F0.e.249}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54309}, goog:processID: 24652, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54309/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (3cf35b0d9dfa12fb2c1c1d10001c2b1d)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]&#10;Session ID: 3cf35b0d9dfa12fb2c1c1d10001c2b1d" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button _ngcontent-pnr-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1285, 133). Other element would receive the click: <div _ngcontent-pnr-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=150.0.7871.127)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3cf35b0d9dfa12fb2c1c1d10001c2b1d, clickElement {id=f.A84CE466847137AA5083F1B002173D93.d.8298F6BA1C8D7B9568F60D937DBD06F0.e.249}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54309}, goog:processID: 24652, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54309/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3cf35b0d9dfa12fb2c1c1d10001c2b1d)] -> css selector: [routerlink*='cart']]
+Session ID: 3cf35b0d9dfa12fb2c1c1d10001c2b1d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at riaadSeleniumFrameWork.AbstractComponent.AbstractComponent.goToCartPage(AbstractComponent.java:63)
+	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:60)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -175,47 +232,23 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
+    <system-err><![CDATA[Jul 19, 2026 4:01:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 19, 2026 4:01:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.127. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.37.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
-  <testcase name="standAloneTest[{password=Ro#49014, email=riaad001@gmail.com, productName=ADIDAS ORIGINAL}](2)" classname="riaadSeleniumFrameWork.Tests.StandAloneTest" time="0.0">
-    <failure message="Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage" is null
-	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
+  <testcase name="standAloneTest[{password=Ro#49014, email=riaad001@gmail.com, productName=ADIDAS ORIGINAL}](2)" classname="riaadSeleniumFrameWork.Tests.StandAloneTest" time="16.222">
+    <system-err><![CDATA[Jul 19, 2026 4:01:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 19, 2026 4:01:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 150.0.7871.127. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.37.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
   <testcase name="OrderHistoryTest" classname="riaadSeleniumFrameWork.Tests.StandAloneTest" time="0.0">
-    <skipped message="Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60 depends on not successfully finished methods &#10;[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60]"/>
+    <skipped message="Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e depends on not successfully finished methods &#10;[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]"/>
   </testcase>
-  <testcase name="runScenario[&quot;Positive test of Submitting the order&quot;, &quot;Purchase the order from the Ecommerce Website&quot;](1)" classname="riaadSeleniumFrameWork.Tests.TestNGTestRunner" time="23.392">
+  <testcase name="runScenario[&quot;Positive test of Submitting the order&quot;, &quot;Purchase the order from the Ecommerce Website&quot;](1)" classname="riaadSeleniumFrameWork.Tests.TestNGTestRunner" time="24.8">
     <system-out><![CDATA[
 @tag @Regression
 Scenario Outline: Positive test of Submitting the order                     # src/test/resources/cucumber/SubmitOrder.feature:18
@@ -225,9 +258,9 @@ Scenario Outline: Positive test of Submitting the order                     # sr
   ✔ And Checkout ZARA COAT 3 and submit the order                           # riaadSeleniumFrameWork.StepDefinitions.StepDefinitionImpl.checkout_zara_coat_and_submit_the_order(java.lang.String,java.lang.String,java.lang.Integer)
   ✔ Then "THANKYOU FOR THE ORDER." message is displayed on ConfirmationPage # riaadSeleniumFrameWork.StepDefinitions.StepDefinitionImpl.message_is_displayed_on_confirmation_page(java.lang.String)
 ]]></system-out>
-    <system-err><![CDATA[Jul 19, 2026 3:30:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 19, 2026 4:01:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 19, 2026 3:30:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Jul 19, 2026 4:01:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 150.0.7871.127. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.37.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

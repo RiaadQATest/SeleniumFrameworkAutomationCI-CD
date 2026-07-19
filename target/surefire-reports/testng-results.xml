@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="8" passed="1" failed="4" skipped="1">
+<testng-results retried="1" ignored="1" total="8" passed="2" failed="3" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-19T15:30:46 SAST" name="Surefire suite" finished-at="2026-07-19T15:31:10 SAST" duration-ms="24058">
+  <suite started-at="2026-07-19T15:58:02 SAST" name="Surefire suite" finished-at="2026-07-19T16:02:11 SAST" duration-ms="248551">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@6ca8564a]" name="LoginErrorValidation" class="riaadSeleniumFrameWork.Tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" name="LoginErrorValidation" class="riaadSeleniumFrameWork.Tests.ErrorValidationsTest"/>
       </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="StandAloneTest.standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60]" name="standAloneTest" class="riaadSeleniumFrameWork.Tests.StandAloneTest"/>
+        <method signature="StandAloneTest.standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]" name="standAloneTest" class="riaadSeleniumFrameWork.Tests.StandAloneTest"/>
       </group> <!-- Purchase -->
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:riaadSeleniumFrameWork.Tests.TestNGTestRunner@6973b51b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:riaadSeleniumFrameWork.Tests.TestNGTestRunner@6dc17b83]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-07-19T15:30:46 SAST" name="Surefire test" finished-at="2026-07-19T15:31:10 SAST" duration-ms="24058">
+    <test started-at="2026-07-19T15:58:02 SAST" name="Surefire test" finished-at="2026-07-19T16:02:11 SAST" duration-ms="248551">
       <class name="riaadSeleniumFrameWork.Tests.StandAloneTest">
-        <test-method signature="standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60]" started-at="2026-07-19T15:30:46 SAST" name="standAloneTest" data-provider="getData" finished-at="2026-07-19T15:30:46 SAST" duration-ms="3" status="FAIL">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]" started-at="2026-07-19T16:01:10 SAST" name="setUpTest" finished-at="2026-07-19T16:01:19 SAST" duration-ms="8524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]" started-at="2026-07-19T16:01:19 SAST" name="standAloneTest" data-provider="getData" finished-at="2026-07-19T16:01:21 SAST" duration-ms="2674" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -24,13 +28,46 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage" is null]]>
+              <![CDATA[element click intercepted: Element <button _ngcontent-pnr-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1285, 133). Other element would receive the click: <div _ngcontent-pnr-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=150.0.7871.127)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3cf35b0d9dfa12fb2c1c1d10001c2b1d, clickElement {id=f.A84CE466847137AA5083F1B002173D93.d.8298F6BA1C8D7B9568F60D937DBD06F0.e.249}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54309}, goog:processID: 24652, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54309/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3cf35b0d9dfa12fb2c1c1d10001c2b1d)] -> css selector: [routerlink*='cart']]
+Session ID: 3cf35b0d9dfa12fb2c1c1d10001c2b1d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage" is null
-at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-pnr-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1285, 133). Other element would receive the click: <div _ngcontent-pnr-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=150.0.7871.127)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3cf35b0d9dfa12fb2c1c1d10001c2b1d, clickElement {id=f.A84CE466847137AA5083F1B002173D93.d.8298F6BA1C8D7B9568F60D937DBD06F0.e.249}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54309}, goog:processID: 24652, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54309/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3cf35b0d9dfa12fb2c1c1d10001c2b1d)] -> css selector: [routerlink*='cart']]
+Session ID: 3cf35b0d9dfa12fb2c1c1d10001c2b1d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at riaadSeleniumFrameWork.AbstractComponent.AbstractComponent.goToCartPage(AbstractComponent.java:63)
+at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:60)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -64,11 +101,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- standAloneTest -->
-        <test-method signature="standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60]" started-at="2026-07-19T15:30:46 SAST" name="standAloneTest" data-provider="getData" finished-at="2026-07-19T15:30:46 SAST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]" started-at="2026-07-19T16:01:21 SAST" name="tearDownTest" finished-at="2026-07-19T16:01:22 SAST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]" started-at="2026-07-19T16:01:22 SAST" name="setUpTest" finished-at="2026-07-19T16:01:29 SAST" duration-ms="7530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="standAloneTest(java.util.HashMap)[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]" started-at="2026-07-19T16:01:29 SAST" name="standAloneTest" data-provider="getData" finished-at="2026-07-19T16:01:45 SAST" duration-ms="16223" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,59 +121,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage" is null
-at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- standAloneTest -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60]" started-at="2026-07-19T15:30:46 SAST" name="OrderHistoryTest" finished-at="2026-07-19T15:30:46 SAST" depends-on-methods="riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]" started-at="2026-07-19T16:01:45 SAST" name="tearDownTest" finished-at="2026-07-19T16:01:46 SAST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]" started-at="2026-07-19T16:01:46 SAST" name="OrderHistoryTest" finished-at="2026-07-19T16:01:46 SAST" depends-on-methods="riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60 depends on not successfully finished methods 
-[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60]]]>
+              <![CDATA[Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e depends on not successfully finished methods 
+[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60 depends on not successfully finished methods 
-[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@3d74bf60]
+              <![CDATA[java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e depends on not successfully finished methods 
+[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@15ff3e9e]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -161,13 +169,30 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
         </test-method> <!-- OrderHistoryTest -->
       </class> <!-- riaadSeleniumFrameWork.Tests.StandAloneTest -->
       <class name="riaadSeleniumFrameWork.Tests.ErrorValidationsTest">
-        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@6ca8564a]" started-at="2026-07-19T15:30:46 SAST" name="LoginErrorValidation" finished-at="2026-07-19T15:30:46 SAST" duration-ms="5" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T15:58:02 SAST" name="setUpTest" finished-at="2026-07-19T15:58:11 SAST" duration-ms="8289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T15:58:11 SAST" name="LoginErrorValidation" finished-at="2026-07-19T15:59:23 SAST" duration-ms="72763" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null]]>
+              <![CDATA[Expected condition failed: waiting for at least one condition to be valid: visibility of element located by By.cssSelector: div.mb-3 || condition to not be valid: url to contain "login". Current url: "https://rahulshettyacademy.com/client/#/auth/login" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59864}, goog:processID: 14552, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59864/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16e4262491bc2ac3b00d369c597664de]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: visibility of element located by By.cssSelector: div.mb-3 || condition to not be valid: url to contain "login". Current url: "https://rahulshettyacademy.com/client/#/auth/login" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59864}, goog:processID: 14552, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59864/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16e4262491bc2ac3b00d369c597664de
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(LandingPage.java:50)
 at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -202,17 +227,38 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@6ca8564a]" started-at="2026-07-19T15:30:46 SAST" name="LoginErrorValidation" finished-at="2026-07-19T15:30:46 SAST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T15:59:23 SAST" name="tearDownTest" finished-at="2026-07-19T15:59:24 SAST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T15:59:24 SAST" name="setUpTest" finished-at="2026-07-19T15:59:35 SAST" duration-ms="11821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T15:59:35 SAST" name="LoginErrorValidation" finished-at="2026-07-19T16:00:48 SAST" duration-ms="72569" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null]]>
+              <![CDATA[Expected condition failed: waiting for at least one condition to be valid: visibility of element located by By.cssSelector: div.mb-3 || condition to not be valid: url to contain "login". Current url: "https://rahulshettyacademy.com/client/#/auth/login" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49315}, goog:processID: 30612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53608bd0a6e4645531b83bc456435c80]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: visibility of element located by By.cssSelector: div.mb-3 || condition to not be valid: url to contain "login". Current url: "https://rahulshettyacademy.com/client/#/auth/login" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49315}, goog:processID: 30612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53608bd0a6e4645531b83bc456435c80
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(LandingPage.java:50)
 at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -247,18 +293,30 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@6ca8564a]" started-at="2026-07-19T15:30:46 SAST" name="ProductErrorValidation" finished-at="2026-07-19T15:30:46 SAST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T16:00:48 SAST" name="tearDownTest" finished-at="2026-07-19T16:00:48 SAST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T16:00:48 SAST" name="setUpTest" finished-at="2026-07-19T16:00:55 SAST" duration-ms="6358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T16:00:55 SAST" name="ProductErrorValidation" finished-at="2026-07-19T16:01:10 SAST" duration-ms="15217" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null
-at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:50)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:57)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -292,24 +350,28 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:riaadSeleniumFrameWork.Tests.ErrorValidationsTest@62150f9e]" started-at="2026-07-19T16:01:10 SAST" name="tearDownTest" finished-at="2026-07-19T16:01:10 SAST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
       </class> <!-- riaadSeleniumFrameWork.Tests.ErrorValidationsTest -->
       <class name="riaadSeleniumFrameWork.Tests.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:riaadSeleniumFrameWork.Tests.TestNGTestRunner@6973b51b]" started-at="2026-07-19T15:30:46 SAST" name="setUpClass" finished-at="2026-07-19T15:30:47 SAST" duration-ms="437" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:riaadSeleniumFrameWork.Tests.TestNGTestRunner@6dc17b83]" started-at="2026-07-19T16:01:46 SAST" name="setUpClass" finished-at="2026-07-19T16:01:46 SAST" duration-ms="479" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4da39ca9]]>
+                <![CDATA[org.testng.TestRunner@2ccc9681]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:riaadSeleniumFrameWork.Tests.TestNGTestRunner@6973b51b]" started-at="2026-07-19T15:30:47 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-07-19T15:31:10 SAST" duration-ms="23391" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:riaadSeleniumFrameWork.Tests.TestNGTestRunner@6dc17b83]" started-at="2026-07-19T16:01:46 SAST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-07-19T16:02:11 SAST" duration-ms="24800" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -325,7 +387,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:riaadSeleniumFrameWork.Tests.TestNGTestRunner@6973b51b]" started-at="2026-07-19T15:31:10 SAST" name="tearDownClass" finished-at="2026-07-19T15:31:10 SAST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:riaadSeleniumFrameWork.Tests.TestNGTestRunner@6dc17b83]" started-at="2026-07-19T16:02:11 SAST" name="tearDownClass" finished-at="2026-07-19T16:02:11 SAST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

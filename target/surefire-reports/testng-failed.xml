@@ -7,12 +7,16 @@
         <methods>
           <include name="LoginErrorValidation"/>
           <include name="ProductErrorValidation"/>
+          <include name="tearDownTest"/>
+          <include name="setUpTest"/>
         </methods>
       </class> <!-- riaadSeleniumFrameWork.Tests.ErrorValidationsTest -->
       <class name="riaadSeleniumFrameWork.Tests.StandAloneTest">
         <methods>
           <include name="OrderHistoryTest"/>
-          <include name="standAloneTest" invocation-numbers="0 1"/>
+          <include name="tearDownTest"/>
+          <include name="setUpTest"/>
+          <include name="standAloneTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- riaadSeleniumFrameWork.Tests.StandAloneTest -->
     </classes>

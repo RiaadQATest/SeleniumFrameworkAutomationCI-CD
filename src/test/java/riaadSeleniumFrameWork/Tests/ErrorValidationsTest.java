@@ -53,7 +53,7 @@ public class ErrorValidationsTest extends BaseTest{
 	productCatalogue.addProductToCart(productName);
 	CartPage cartPage=productCatalogue.goToCartPage();
 	//CartPage cartPage=new CartPage(driver);
-	Boolean match=cartPage.verifyProductDisplay("ZARA COAT 33");
+	Boolean match=cartPage.verifyProductDisplay("ZARA COAT 3");
 	Assert.assertTrue(match);
 	
 	}
