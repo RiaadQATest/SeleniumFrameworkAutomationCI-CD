@@ -20,12 +20,12 @@ public class ConfirmationPage  extends AbstractComponent{
 
 
 	@FindBy(css=".hero-primary")
-	WebElement confirmtionMessage;
+	WebElement confirmationMessage;
 	
-	public String getConfimationMessage ()
+	public String getConfirmationMessage ()
 	{
-		
-	return confirmtionMessage.getText();
+		waitForElementToAppear(By.cssSelector(".hero-primary"));
+	return confirmationMessage.getText();
 	
 	}
 	

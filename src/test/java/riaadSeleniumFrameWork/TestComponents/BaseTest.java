@@ -18,9 +18,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -30,8 +27,8 @@ import riaadSeleniumFrameWork.pageObject.LandingPage;
 
 public class BaseTest {
 	
-	public WebDriver driver;
-	public LandingPage landingPage ;
+	public static WebDriver driver;
+	public static LandingPage landingPage;
 	
 	
 	public WebDriver initializerDriver () throws IOException
@@ -110,26 +107,12 @@ public String getScreenShot(String testCaseName,WebDriver driver) throws IOExcep
 
 }
 
-	
-	@BeforeMethod(alwaysRun=true)
-	public LandingPage launchApplication() throws IOException 
-	
-	{
-		
-		driver=initializerDriver();
-		landingPage=new LandingPage(driver); //LandingPage class
-		landingPage.goTo();
-		return landingPage;
-		
-	}
-	
-	@AfterMethod(alwaysRun=true)
-	
-	public void tearDown ()
-	
-	{
-		driver.quit();
-	}
-	
-	
+public LandingPage launchApplication() throws IOException 
+{
+	driver=initializerDriver();
+	landingPage=new LandingPage(driver);
+	landingPage.goTo();
+	return landingPage;
+}
+
 }

@@ -31,7 +31,7 @@ public class CartPage extends AbstractComponent {
 			
 	}
 
-	public Boolean VerifyPoductDisplay (String productName)
+	public Boolean verifyProductDisplay (String productName)
 	
 	{
 		Boolean match= cartProducts.stream().anyMatch(cartProduct->cartProduct.getText().equalsIgnoreCase(productName));

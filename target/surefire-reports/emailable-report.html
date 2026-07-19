@@ -9,45 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">85 568</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num attn">1</td><td class="num attn">4</td><td class="num">25 769</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cucumber.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1783338345925</td><td rowspan="1">9567</td></tr><tr class="failedodd"><td rowspan="1">riaadSeleniumFrameWork.Tests.StandAloneTest</td><td><a href="#m1">standAloneTest</a></td><td rowspan="1">1783338385999</td><td rowspan="1">21006</td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">riaadSeleniumFrameWork.Tests.StandAloneTest</td><td><a href="#m2">OrderHistoryTest</a></td><td rowspan="1">1783338430871</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">riaadSeleniumFrameWork.Tests.ErrorValidationsTest</td><td><a href="#m3">LoginErrorValidation</a></td><td rowspan="1">1783338362498</td><td rowspan="1">924</td></tr><tr class="passedeven"><td><a href="#m4">ProductErrorValidation</a></td><td rowspan="1">1783338375911</td><td rowspan="1">3710</td></tr><tr class="passedodd"><td rowspan="1">riaadSeleniumFrameWork.Tests.StandAloneTest</td><td><a href="#m5">standAloneTest</a></td><td rowspan="1">1783338414475</td><td rowspan="1">16098</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">riaadSeleniumFrameWork.Tests.ErrorValidationsTest</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1784467693591</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">ProductErrorValidation</a></td><td rowspan="1">1784467693600</td><td rowspan="1">2</td></tr><tr class="failedodd"><td rowspan="2">riaadSeleniumFrameWork.Tests.StandAloneTest</td><td><a href="#m2">standAloneTest</a></td><td rowspan="2">1784467693874</td><td rowspan="2">3</td></tr><tr class="failedodd"><td><a href="#m3">standAloneTest</a></td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">riaadSeleniumFrameWork.Tests.StandAloneTest</td><td><a href="#m4">OrderHistoryTest</a></td><td rowspan="1">1784467693885</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">riaadSeleniumFrameWork.Tests.ErrorValidationsTest</td><td><a href="#m5">LoginErrorValidation</a></td><td rowspan="1">1784467693581</td><td rowspan="1">6</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">riaadSeleniumFrameWork.Tests.TestNGTestRunner</td><td><a href="#m6">runScenario</a></td><td rowspan="1">1784467694588</td><td rowspan="1">24699</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">cucumber.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive test of Submitting the order&quot;</td><td>&quot;Purchase the order from the Ecommerce Website&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;I add product ZARA COAT 3 to Cart&apos; and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;I add product ZARA COAT {int} to Cart&quot;)
-public void i_add_product_zara_coat_to_cart(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;Checkout ZARA COAT {int} and submit the order&quot;)
-public void checkout_zara_coat_and_submit_the_order(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I add product ZARA COAT 3 to Cart(file:///C:/Users/riaad/SeleniumFrameworkAutomationCI-CD/src/test/java/cucumber/SubmitOrder.feature:13)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">riaadSeleniumFrameWork.Tests.StandAloneTest#standAloneTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iking@000, email=anska@gmail.com, productName=ADIDAS ORIGINAL}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.offset-sm-1 (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52606}, goog:processID: 23780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52606/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f91702ce5c8541738be45a5d8580af4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at riaadSeleniumFrameWork.AbstractComponent.AbstractComponent.waitForElementToAppear(AbstractComponent.java:34)
-	at riaadSeleniumFrameWork.pageObject.ProductCatalogue.getProductList(ProductCatalogue.java:45)
-	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:57)
+<h2>Surefire test</h2><h3 id="m0">riaadSeleniumFrameWork.Tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">riaadSeleniumFrameWork.Tests.StandAloneTest#OrderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b depends on not successfully finished methods 
-[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]
+<h3 id="m1">riaadSeleniumFrameWork.Tests.ErrorValidationsTest#ProductErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">riaadSeleniumFrameWork.Tests.StandAloneTest#standAloneTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">riaadSeleniumFrameWork.Tests.StandAloneTest#standAloneTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Ro#49014, email=riaad001@gmail.com, productName=ADIDAS ORIGINAL}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">riaadSeleniumFrameWork.Tests.StandAloneTest#OrderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f depends on not successfully finished methods 
+[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">riaadSeleniumFrameWork.Tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">riaadSeleniumFrameWork.Tests.ErrorValidationsTest#ProductErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">riaadSeleniumFrameWork.Tests.StandAloneTest#standAloneTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">riaadSeleniumFrameWork.Tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">riaadSeleniumFrameWork.Tests.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive test of Submitting the order&quot;</td><td>&quot;Purchase the order from the Ecommerce Website&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

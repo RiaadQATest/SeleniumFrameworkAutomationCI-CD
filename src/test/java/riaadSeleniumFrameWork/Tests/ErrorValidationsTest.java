@@ -33,12 +33,12 @@ public class ErrorValidationsTest extends BaseTest{
 	public void LoginErrorValidation() throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 
-//	String productName="ZARA COAT 3";
+	//String productName="ZARA COAT 3";
 	//Changes made to code, user have to update it
 	
 	landingPage.loginApplication("riaad001@gmail.com", "Ro#49015");
-	Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
-	
+	//Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+	Assert.assertEquals(landingPage.getErrorMessage() ,"Incorrect email or password.");
 	}
 	
 	
@@ -53,8 +53,8 @@ public class ErrorValidationsTest extends BaseTest{
 	productCatalogue.addProductToCart(productName);
 	CartPage cartPage=productCatalogue.goToCartPage();
 	//CartPage cartPage=new CartPage(driver);
-	Boolean match=cartPage.VerifyPoductDisplay("ZARA COAT 33");
-	Assert.assertFalse(match);
+	Boolean match=cartPage.verifyProductDisplay("ZARA COAT 33");
+	Assert.assertTrue(match);
 	
 	}
 

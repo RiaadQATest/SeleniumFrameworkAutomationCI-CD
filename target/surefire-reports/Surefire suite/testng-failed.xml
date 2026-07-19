@@ -3,19 +3,16 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="cucumber.TestNGTestRunner">
+      <class name="riaadSeleniumFrameWork.Tests.ErrorValidationsTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="LoginErrorValidation"/>
+          <include name="ProductErrorValidation"/>
         </methods>
-      </class> <!-- cucumber.TestNGTestRunner -->
+      </class> <!-- riaadSeleniumFrameWork.Tests.ErrorValidationsTest -->
       <class name="riaadSeleniumFrameWork.Tests.StandAloneTest">
         <methods>
           <include name="OrderHistoryTest"/>
-          <include name="tearDown"/>
-          <include name="launchApplication"/>
-          <include name="standAloneTest" invocation-numbers="0"/>
+          <include name="standAloneTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- riaadSeleniumFrameWork.Tests.StandAloneTest -->
     </classes>

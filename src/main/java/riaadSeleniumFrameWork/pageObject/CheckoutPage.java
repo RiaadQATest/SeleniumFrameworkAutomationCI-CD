@@ -27,7 +27,7 @@ WebDriver driver;
 	@FindBy(xpath="(//button[contains(@class,'ta-item')])[2]")
 	WebElement selectCountry;
 
-	By results= By.cssSelector(".ta-results");
+	By resultsBy= By.cssSelector(".ta-results");
 	
 	
 	public void selectCountry (String countryName)
@@ -35,7 +35,7 @@ WebDriver driver;
 	{
 		Actions a= new Actions(driver);
 		a.sendKeys(country, countryName).build().perform();
-		waitForElementToAppear(By.cssSelector(".ta-results"));
+		waitForElementToAppear(resultsBy);
 		selectCountry.click();
 		
 	}

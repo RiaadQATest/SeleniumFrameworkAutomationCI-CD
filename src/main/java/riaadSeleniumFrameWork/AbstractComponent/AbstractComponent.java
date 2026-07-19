@@ -16,9 +16,12 @@ import riaadSeleniumFrameWork.pageObject.OrderPage;
 public class AbstractComponent {
 
 	WebDriver driver;
+	WebDriverWait wait;
+	
 	
 	public AbstractComponent(WebDriver driver) {
 		this.driver=driver;
+		this.wait= new WebDriverWait (driver, Duration.ofSeconds(30));
 		PageFactory.initElements(driver, this);
 	}
 @FindBy (css="[routerlink*='cart']")
@@ -27,49 +30,56 @@ WebElement cartHeader;
 @FindBy (css="[routerlink*='myorders']")
 WebElement orderHeader;
 
-	public void waitForElementToAppear (By findBy)
+public void waitForElementToAppear (By locator)
 	
 	{
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
-	wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+	//WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));// this code is repeated need to handle it better
+	wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
 	
 	}
 
-public void waitForWebElementToAppear (WebElement findBy)
+public void waitForWebElementToAppear (WebElement element)
 	
 	{
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
-	wait.until(ExpectedConditions.visibilityOf(findBy));
+	//WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+	wait.until(ExpectedConditions.visibilityOf(element));
 
 	
 	}
+public void waitforElementsToAppear (By locator)
+{
 
-	
-	
+//WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+}
 	
 	public CartPage goToCartPage ()
 	{
-		cartHeader.click();
 		
-		CartPage cartPage=new CartPage(driver);
-		return cartPage;
+		waitForWebElementToAppear(cartHeader);
+		
+		cartHeader.click();
+		return new CartPage(driver);
+		
 	}
 	
 	public OrderPage goToOrdersPage ()
 	{
+		waitForWebElementToAppear(orderHeader);
 		orderHeader.click();
+		return new OrderPage(driver);
 		
-		OrderPage orderPage=new OrderPage(driver);
-		return orderPage;
+	
 	}
 	
-	public void waitForElementToDisappear (WebElement ele)
+	public void waitForElementToDisappear (WebElement element)
 
 	
 	{
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
-	wait.until(ExpectedConditions.invisibilityOf(ele));
+	//WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+	wait.until(ExpectedConditions.invisibilityOf(element));
 	
 	}
 

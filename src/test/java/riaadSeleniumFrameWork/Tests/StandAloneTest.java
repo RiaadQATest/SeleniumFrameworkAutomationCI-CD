@@ -53,17 +53,18 @@ public class StandAloneTest extends BaseTest{
 	*/
 	//LandingPage landingPage=launchApplication();
 	ProductCatalogue productCatalogue=landingPage.loginApplication(input.get("email"),input.get("password"));
+	productCatalogue.waitforElementsToAppear(By.cssSelector(".mb-3"));
 	//ProductCatalogue productCatalogue=new ProductCatalogue(driver); //ProductCatalogue Class
 	List <WebElement>products= productCatalogue.getProductList();
 	productCatalogue.addProductToCart(input.get("productName"));
 	CartPage cartPage=productCatalogue.goToCartPage();
 	//CartPage cartPage=new CartPage(driver);
-	Boolean match=cartPage.VerifyPoductDisplay(input.get("productName"));
+	Boolean match=cartPage.verifyProductDisplay(input.get("productName"));
 	Assert.assertTrue(match);
 	CheckoutPage checkoutPage= cartPage.goToCheckOut();
 	checkoutPage.selectCountry("india");
 	ConfirmationPage confirmationPage= checkoutPage.submitOrder();
-	String confirmMessage= confirmationPage.getConfimationMessage();
+	String confirmMessage= confirmationPage.getConfirmationMessage();
 	Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 //	driver.quit();
 
@@ -118,8 +119,9 @@ public class StandAloneTest extends BaseTest{
 	public void OrderHistoryTest()
 	
 	{
-		//"ZARA COAT 3"
+		String productName="ZARA COAT 3";
 		ProductCatalogue productCatalogue=landingPage.loginApplication("riaad001@gmail.com", "Ro#49014");
+		productCatalogue.waitforElementsToAppear(By.cssSelector(".mb-3"));
 		OrderPage orderPage=productCatalogue.goToOrdersPage();
 		Assert.assertTrue(orderPage.VerifyOrderDisplay(productName));
 	}
@@ -140,7 +142,7 @@ public class StandAloneTest extends BaseTest{
 		map1.put("password", "Ro#49014");
 		map1.put("productName", "ZARA COAT 3");
 	*/	
-		List<HashMap<String,String>>data=getJsonDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\riaadSeleniumFrameWork\\data\\PurshaseOrder.json");	
+		List<HashMap<String,String>>data=getJsonDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\riaadSeleniumFrameWork\\data\\PurchaseOrder.json");	
 		return new Object [] [] {{data.get(0)},{data.get(1)}};
 	
 	

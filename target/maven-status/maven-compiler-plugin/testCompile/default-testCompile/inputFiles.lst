@@ -1,8 +1,9 @@
-C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\cucumber\TestNGTestRunner.java
 C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\data\DataReader.java
-C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\stepDefinitions\StepDefinitionImpl.java
+C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\StepDefinitions\Hooks.java
+C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\StepDefinitions\StepDefinitionImpl.java
 C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\TestComponents\BaseTest.java
 C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\TestComponents\Listeners.java
 C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\TestComponents\Retry.java
 C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\Tests\ErrorValidationsTest.java
 C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\Tests\StandAloneTest.java
+C:\Users\riaad\SeleniumFrameworkAutomationCI-CD\src\test\java\riaadSeleniumFrameWork\Tests\TestNGTestRunner.java

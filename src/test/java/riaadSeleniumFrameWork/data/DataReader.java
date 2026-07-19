@@ -19,7 +19,7 @@ public class DataReader {
 		
 		
 		//read json to string
-	String jsonContent=	FileUtils.readFileToString(new File(System.getProperty("user.dir")+"\\src\\test\\java\\riaadSeleniumFrameWork\\data\\PurshaseOrder.json"),StandardCharsets.UTF_8);
+	String jsonContent=	FileUtils.readFileToString(new File(System.getProperty("user.dir")+"\\src\\test\\java\\riaadSeleniumFrameWork\\data\\PurchaseOrder.json"),StandardCharsets.UTF_8);
 	
 	//String to HashMap Datbind
 	ObjectMapper mapper= new ObjectMapper();

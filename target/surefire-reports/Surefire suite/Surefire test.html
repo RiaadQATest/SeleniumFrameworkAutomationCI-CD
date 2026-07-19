@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/4/2</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 06 13:45:45 SAST 2026</td>
+<td>Started on:</td><td>Sun Jul 19 15:28:13 SAST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>85 seconds (85568 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25769 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,31 +76,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest()'><b>standAloneTest</b><br>Test class: riaadSeleniumFrameWork.Tests.StandAloneTest<br>Parameters: {password=Iking@000, email=anska@gmail.com, productName=ADIDAS ORIGINAL}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.offset-sm-1 (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52606}, goog:processID: 23780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52606/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f91702ce5c8541738be45a5d8580af4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at riaadSeleniumFrameWork.AbstractComponent.AbstractComponent.waitForElementToAppear(AbstractComponent.java:34)
-	at riaadSeleniumFrameWork.pageObject.ProductCatalogue.getProductList(ProductCatalogue.java:45)
-	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:57)
+<td title='riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest()'><b>standAloneTest</b><br>Test class: riaadSeleniumFrameWork.Tests.StandAloneTest<br>Parameters: {password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2048537704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2048537704'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.offset-sm-1 (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\riaad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52606}, goog:processID: 23780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52606/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f91702ce5c8541738be45a5d8580af4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at riaadSeleniumFrameWork.AbstractComponent.AbstractComponent.waitForElementToAppear(AbstractComponent.java:34)
-	at riaadSeleniumFrameWork.pageObject.ProductCatalogue.getProductList(ProductCatalogue.java:45)
-	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:57)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823575379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823575379'><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -133,44 +115,134 @@ Session ID: 7f91702ce5c8541738be45a5d8580af4
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>21</td>
-<td>riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b</td></tr>
+<td>0</td>
+<td>riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f</td></tr>
 <tr>
-<td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test of Submitting the order", "Purchase the order from the Ecommerce Website"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I add product ZARA COAT 3 to Cart&apos; and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;I add product ZARA COAT {int} to Cart&quot;)
-public void i_add_product_zara_coat_to_cart(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;Checkout ZARA COAT {int} and submit the order&quot;)
-public void checkout_zara_coat_and_submit_the_order(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I add product ZARA COAT 3 to Cart(file:///C:/Users/riaad/SeleniumFrameworkAutomationCI-CD/src/test/java/cucumber/SubmitOrder.feature:13)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1395533739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1395533739'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I add product ZARA COAT 3 to Cart&apos; and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;I add product ZARA COAT {int} to Cart&quot;)
-public void i_add_product_zara_coat_to_cart(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;Checkout ZARA COAT {int} and submit the order&quot;)
-public void checkout_zara_coat_and_submit_the_order(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.I add product ZARA COAT 3 to Cart(file:///C:/Users/riaad/SeleniumFrameworkAutomationCI-CD/src/test/java/cucumber/SubmitOrder.feature:13)
+<td title='riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation()'><b>ProductErrorValidation</b><br>Test class: riaadSeleniumFrameWork.Tests.ErrorValidationsTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace330739404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace330739404'><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>9</td>
-<td>cucumber.TestNGTestRunner@188715b5</td></tr>
+<td>0</td>
+<td>riaadSeleniumFrameWork.Tests.ErrorValidationsTest@1139b2f3</td></tr>
+<tr>
+<td title='riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation()'><b>LoginErrorValidation</b><br>Test class: riaadSeleniumFrameWork.Tests.ErrorValidationsTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1484673893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1484673893'><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>riaadSeleniumFrameWork.Tests.ErrorValidationsTest@1139b2f3</td></tr>
+<tr>
+<td title='riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest()'><b>standAloneTest</b><br>Test class: riaadSeleniumFrameWork.Tests.StandAloneTest<br>Parameters: {password=Ro#49014, email=riaad001@gmail.com, productName=ADIDAS ORIGINAL}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1318227903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1318227903'><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -181,20 +253,10 @@ public void checkout_zara_coat_and_submit_the_order(Integer int1) {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation()'><b>ProductErrorValidation</b><br>Test class: riaadSeleniumFrameWork.Tests.ErrorValidationsTest</td>
+<td title='riaadSeleniumFrameWork.Tests.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: riaadSeleniumFrameWork.Tests.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test of Submitting the order", "Purchase the order from the Ecommerce Website"</td>
 <td></td>
-<td>3</td>
-<td>riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce</td></tr>
-<tr>
-<td title='riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation()'><b>LoginErrorValidation</b><br>Test class: riaadSeleniumFrameWork.Tests.ErrorValidationsTest</td>
-<td></td>
-<td>0</td>
-<td>riaadSeleniumFrameWork.Tests.ErrorValidationsTest@192d43ce</td></tr>
-<tr>
-<td title='riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest()'><b>standAloneTest</b><br>Test class: riaadSeleniumFrameWork.Tests.StandAloneTest<br>Parameters: {password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}</td>
-<td></td>
-<td>16</td>
-<td>riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b</td></tr>
+<td>24</td>
+<td>riaadSeleniumFrameWork.Tests.TestNGTestRunner@56620197</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -205,13 +267,55 @@ public void checkout_zara_coat_and_submit_the_order(Integer int1) {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest()'><b>OrderHistoryTest</b><br>Test class: riaadSeleniumFrameWork.Tests.StandAloneTest</td>
-<td><div><pre>java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b depends on not successfully finished methods 
-[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]
+<td title='riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation()'><b>LoginErrorValidation</b><br>Test class: riaadSeleniumFrameWork.Tests.ErrorValidationsTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1618326377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1618326377'><pre>java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b depends on not successfully finished methods 
-[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2012330741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2012330741'><pre>java.lang.NullPointerException: Cannot invoke &quot;riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)&quot; because &quot;riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage&quot; is null
+	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>riaadSeleniumFrameWork.Tests.ErrorValidationsTest@1139b2f3</td></tr>
+<tr>
+<td title='riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest()'><b>OrderHistoryTest</b><br>Test class: riaadSeleniumFrameWork.Tests.StandAloneTest</td>
+<td><div><pre>java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f depends on not successfully finished methods 
+[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace693958407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace693958407'><pre>java.lang.Throwable: Method riaadSeleniumFrameWork.Tests.StandAloneTest.OrderHistoryTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f depends on not successfully finished methods 
+[riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest() on instance riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -238,7 +342,7 @@ public void checkout_zara_coat_and_submit_the_order(Integer int1) {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>0</td>
-<td>riaadSeleniumFrameWork.Tests.StandAloneTest@6973b51b</td></tr>
+<td>riaadSeleniumFrameWork.Tests.StandAloneTest@1725dc0f</td></tr>
 </table><p>
 </body>
 </html>
