@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 4, Errors: 0, Skipped: 2, Time elapsed: 26.41 s <<< FAILURE! -- in TestSuite
-riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation -- Time elapsed: 0.004 s <<< FAILURE!
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 2, Time elapsed: 24.52 s <<< FAILURE! -- in TestSuite
+riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation -- Time elapsed: 0.002 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null
 	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -37,7 +37,7 @@ java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation -- Time elapsed: 0.001 s <<< FAILURE!
+riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation -- Time elapsed: 0.002 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.ErrorValidationsTest.landingPage" is null
 	at riaadSeleniumFrameWork.Tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:50)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -72,7 +72,7 @@ java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest[{password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}](1) -- Time elapsed: 0.004 s <<< FAILURE!
+riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest[{password=Ro#49014, email=riaad001@gmail.com, productName=ZARA COAT 3}](1) -- Time elapsed: 0.001 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage" is null
 	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -107,7 +107,7 @@ java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest[{password=Ro#49014, email=riaad001@gmail.com, productName=ADIDAS ORIGINAL}](2) -- Time elapsed: 0.002 s <<< FAILURE!
+riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest[{password=Ro#49014, email=riaad001@gmail.com, productName=ADIDAS ORIGINAL}](2) -- Time elapsed: 0 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "riaadSeleniumFrameWork.pageObject.LandingPage.loginApplication(String, String)" because "riaadSeleniumFrameWork.Tests.StandAloneTest.landingPage" is null
 	at riaadSeleniumFrameWork.Tests.StandAloneTest.standAloneTest(StandAloneTest.java:55)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)

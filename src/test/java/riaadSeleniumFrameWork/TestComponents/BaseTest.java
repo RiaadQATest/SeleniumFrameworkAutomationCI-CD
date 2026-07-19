@@ -18,6 +18,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -114,5 +116,24 @@ public LandingPage launchApplication() throws IOException
 	landingPage.goTo();
 	return landingPage;
 }
+
+	@BeforeMethod
+	public void setUpTest() throws IOException {
+		// Initialize driver and landing page for TestNG tests if not already initialized
+		if (driver == null) {
+			driver = initializerDriver();
+		}
+		landingPage = new LandingPage(driver);
+		landingPage.goTo();
+	}
+
+	@AfterMethod
+	public void tearDownTest() {
+		if (driver != null) {
+			driver.quit();
+			driver = null;
+			landingPage = null;
+		}
+	}
 
 }
