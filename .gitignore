@@ -2,3 +2,9 @@
 target/ 
 reports/ 
 *.class 
+test-output/  
+*.log  
+.idea/  
+.settings/  
+.classpath  
+.project 
