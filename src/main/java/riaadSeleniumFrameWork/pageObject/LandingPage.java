@@ -1,8 +1,16 @@
 package riaadSeleniumFrameWork.pageObject;
 
 import java.time.Duration;
+import java.io.File;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,32 +52,34 @@ public class LandingPage extends AbstractComponent {
 		passwordEle.sendKeys(password);
 		submit.click();
 		
+		
+		
 		// Wait for product list to appear (successful login) or URL to change away from login
+		WebDriverWait Wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-			wait.until(org.openqa.selenium.support.ui.ExpectedConditions.or(
-					ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.mb-3")),
-					ExpectedConditions.not(ExpectedConditions.urlContains("login"))
+		
+			Wait.until(org.openqa.selenium.support.ui.ExpectedConditions.or(
+					ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.mb-3")),// success: product list
+					//ExpectedConditions.presenceOfElementLocated(By.cssSelector(".toast-message")),// failure: error toast
+					ExpectedConditions.urlContains("/dashboard")
 					));
-		} catch (Exception e) {
-			// Check if there's an error message
-			try {
-				String errorMsg = getErrorMessage();
-				System.out.println("Login failed with error: " + errorMsg);
-			} catch (Exception e2) {
-				System.out.println("Login failed but no error message found");
-			}
-			throw e;
-		}
+		} catch (TimeoutException e) {
+			
+			System.out.println("Login failed: Incorrect email or password");
+			driver.navigate().refresh();
+			throw new RuntimeException("Incorrect email or password");
+			
+				}
 		
 		ProductCatalogue productCatalogue=new ProductCatalogue(driver); //ProductCatalogue Class
 		return productCatalogue;
-		}
+		
+	}
 	
 	public  String getErrorMessage ()
 	{
 		// Try a few common toast/container locators to be robust against UI changes
-		By[] locators = new By[] { By.cssSelector(".toast-message"), By.cssSelector("#toast-container"), By.cssSelector("#toast-container .toast-message") };
+		By[] locators = new By[] { By.cssSelector(".toast-message"), By.cssSelector(".ngx-toastr"), By.cssSelector("#toast-container .toast-message") };
 		for (By loc : locators) {
 			try {
 				waitForElementToAppear(loc);

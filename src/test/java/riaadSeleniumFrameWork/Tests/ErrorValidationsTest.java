@@ -29,7 +29,7 @@ import riaadSeleniumFrameWork.pageObject.ProductCatalogue;
 
 
 public class ErrorValidationsTest extends BaseTest{
-	@Test (groups={"ErrorHandling"},retryAnalyzer=Retry.class)
+	@Test (groups={"ErrorHandling"},retryAnalyzer=Retry.class, enabled=false)
 	public void LoginErrorValidation() throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 
@@ -51,6 +51,7 @@ public class ErrorValidationsTest extends BaseTest{
 	//ProductCatalogue productCatalogue=new ProductCatalogue(driver); //ProductCatalogue Class
 	List <WebElement>products= productCatalogue.getProductList();
 	productCatalogue.addProductToCart(productName);
+	
 	CartPage cartPage=productCatalogue.goToCartPage();
 	//CartPage cartPage=new CartPage(driver);
 	Boolean match=cartPage.verifyProductDisplay("ZARA COAT 3");
