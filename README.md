@@ -36,8 +36,8 @@ Automated UI testing framework using Selenium , TestNg, Maven with Jenkins CI/CD
 git clone https://github.com/RiaadQATest/SeleniumFrameworkAutomationCI-CD.git
 
 cd SeleniumFrameworkAutomationCI-CD
-**Run Test**
 
+**Run Test**
 mvn clean test
 
 
